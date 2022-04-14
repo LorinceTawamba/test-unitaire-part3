@@ -1,0 +1,8 @@
+CREATE TABLE `produit` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `nom` VARCHAR(255) NULL DEFAULT NULL,
+    `description` VARCHAR(255) NULL DEFAULT NULL,
+    `qté` INT(11) NULL DEFAULT NULL,
+    `prix` INT(11) NULL DEFAULT NULL,
+    PRIMARY KEY (`id`)
+);

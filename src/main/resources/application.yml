@@ -1,0 +1,36 @@
+# =================================
+# SERVICE CONFIGURATION
+# =================================
+server:
+  port: 8181
+
+# =================================
+# DATABASE CONFIGURATION
+# =================================
+spring:
+  application:
+    name: GESTION-PRODUIT
+  datasource:
+    url: jdbc:mysql://localhost:3306/bd_gestion_produit?serverTimezone=Africa/Douala&createDatabaseIfNotExist=true
+    username: root
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        connection:
+          characterEncoding: utf-8
+          CharSet: utf-8
+          useUnicode: true
+  sql:
+    init:
+      mode: always
+      encoding: UTF-8
+
+
+
+
+
